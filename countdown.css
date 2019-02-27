@@ -1,0 +1,72 @@
+body {
+    font-family: 'Righteous', cursive;
+    background-color: darkblue;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 5rem;
+    text-shadow: 2px 2px yellow;
+    border-radius: 40%;
+    margin-top: -.5rem;
+}
+.clock-container {
+    background-color: black;
+    color: yellow;
+    font-size: 8rem;
+    width: 100%;
+    height: 20rem;
+    max-width: 40rem;
+    border: .50rem solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-radius: 40%;
+}
+.button-container div{
+    margin: .3rem;
+    display: inline-block;
+}
+.start-btn, .stop-btn, .reset-btn {
+    width: 100%;
+    font-size: 3rem;
+    font-family: 'Righteous', cursive;
+    border-radius: 15%;
+    border: .2em solid black;
+}
+.start-btn {
+    background-color: lightgreen;
+}
+.stop-btn {
+    background-color: darkred;
+    color: red;
+    text-shadow: 2px 2px black;
+}
+.reset-btn {
+    background-color: darkblue;
+    color: white;
+    text-shadow: 2px 2px yellow;
+}
+@media only screen and (max-width: 650px){
+    h1 {
+        font-size: 3rem;
+    }
+    .clock-container {
+        max-width: 15rem;
+        font-size: 3.5rem;
+        height: 5rem;
+    }
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .start-btn, .stop-btn, .reset-btn {
+        max-width: 8rem;
+        font-size: 2rem;
+    }
+
+}
